@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Writer's WingMan</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preload" href="fonts/inter-light.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-regular.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/inter-bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/fa-solid-900.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="popup">
+      <div class="top-section">
+        <div class="menu">
+          <div class="logos">
+            <a href="#"><img id="logo-image" src="images/icon48.png" alt="Writers Wingman Logo"></a>
+            <a href="#"><img id="logo-text" src="images/logo.png" alt="Writers Wingman Logo"></a>
+          </div>
+          <div class="upgrade">
+            <!-- <button type="button" id="upgrade-button"> Upgrade to Premium</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+
+        <div id="rewrite-form">
+          <div class="rewrite-questions">
+            <label>
+              <div class="options-question">
+                Add a sentence below to rewrite
+              </div>
+              <div class="options">
+                <textarea id="text-to-rewrite" placeholder="Here's a mediocre sentence we want The Writer's WingMan to magically turn into a sentence my 6th grade English teacher would be proud of."></textarea>
+                <div id="word-counter">
+                  Words Remaining:&nbsp <div id="show-count"></div>
+                </div>
+              </div>
+            </label>
+            <label>
+              <div class="options-question">
+                Choose a formality
+              </div>
+              <div class="options">
+                <input type="radio" name="formality" value="casual">
+                Casual
+                <input type="radio" name="formality" value="neutral" checked>
+                Neutral
+                <input type="radio" name="formality" value="formal">
+                Formal
+              </div>
+            </label>
+            <label>
+              <div class="options-question">
+                Choose a tone
+              </div>
+              <div class="options">
+                <input type="radio" name="tone" value="personable" checked>
+                Personable
+                <input type="radio" name="tone" value="empathetic">
+                Empathetic
+                <input type="radio" name="tone" value="humorous">
+                Humorous
+                <input type="radio" name="tone" value="friendly">
+                Friendly
+                <input type="radio" name="tone" value="confident">
+                Confident
+                <input type="radio" name="tone" value="Direct">
+                Direct
+              </div>
+            </label>
+            <label>
+              <div class="options-question">
+                Choose a length
+              </div>
+              <div class="options">
+                <input type="radio" name="length" value="shorter">
+                Shorter
+                <input type="radio" name="length" value="similar" checked>
+                Same
+                <input type="radio" name="length" value="longer">
+                Longer
+              </div>
+            </label>
+          </div>
+
+        </div>
+        <div id="suggestion-section">
+          <div id="suggestions">
+
+          </div>
+        </div>
+        <div id="loading-screen">
+          <div id="loader"></div>
+          <div class="loading-text">
+            Please hold while the magic happens...
+          </div>
+        </div>
+      </div>
+      <div id="request-counter"></div>
+      <button id="suggestions-button">Provide Suggestions</button>
+    </div>
+  </body>
+  <script src="js/popup-script.js"></script>
+  <script src="js/font-awesome.js"></script>
+</html>

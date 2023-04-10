@@ -1,0 +1,241 @@
+/*
+ * This is temporary styling and can be completed removed or replaced.
+ */
+
+@font-face {
+   font-family: Inter;
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src: url("chrome-extension://hlhaeldcnkdopbfcpdjmlcfcdgclhgbl/fonts/inter-bold.ttf")
+ }
+
+ @font-face {
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+     src: url("chrome-extension://hlhaeldcnkdopbfcpdjmlcfcdgclhgbl/fonts/inter-regular.ttf")
+ }
+
+
+#wingManMenu {
+  display: none;
+  position: fixed;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  z-index: 9999;
+  bottom:0;
+  left:0;   /*Just Stay at the bottom*/
+  width:100%;
+}
+
+#wingManIcon {
+  position: fixed;
+  right: 20px;
+  bottom: 55px;
+  z-index: 9999;
+}
+
+.popup {
+  width: 505px;
+  background-color: white;
+  border: 1px solid #084887;
+  font-family: Inter,sans-serif;
+  overflow-y: auto;
+}
+
+.top-section {
+  border-bottom: 1.5px solid rgba(0,0,0,.06);
+}
+
+.menu{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#logo-image{
+  width: 20px;
+  height: 20px;
+}
+
+#logo-text{
+  height: 20px;
+}
+.logos{
+  float: left;
+  margin-top: 4px;
+}
+.upgrade{
+  float: right;
+}
+
+#upgrade-button{
+  background-color: #F7F5FB;
+  color: black;
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.main-section {
+  height: 335px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+
+#suggestion-header{
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#text-to-rewrite{
+  width: 100%;
+  height: 85px;
+  border-width: 1.5px;
+  border-color: #084887;
+}
+
+#word-counter{
+  display: none;
+  float: right;
+}
+
+#show-count{
+  float: right;
+}
+.rewrite-questions{
+  padding-top: 15px;
+}
+
+.options-question{
+  font-weight: 600;
+  padding-top: 10px;
+
+}
+
+.options{
+  padding-top: 5px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#suggestions-button {
+  margin-top: 2px;
+  background-color: #084887;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#suggestion-section{
+  display: none;
+}
+
+#loader {
+  border: 16px solid #F7F5FB; /* Light grey */
+  border-top: 16px solid #084887; /* Blue */
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 5s linear infinite;
+  left: 29%;
+  position: relative;
+
+}
+
+#loading-screen {
+  display: none;
+  position: absolute;
+  left: 27%;
+  top: 38%;
+  z-index: 1;
+}
+
+.loading-text{
+  padding-top: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+
+#rewrite-form{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.suggestions-list{
+  padding-inline-start: 0px !important;
+  list-style-type: none;
+  margin: 0;
+}
+
+.suggestions-list li:last-child { border-bottom: n }
+
+.suggestion{
+  border-bottom: 2px solid #909CC2;
+  overflow: hidden;
+  width:100%;
+}
+
+.suggestion:hover {
+  background-color: #F7F5FB;
+}
+
+.suggestionText {
+  width: 80%;
+  font-size: 12px;
+  float: left;
+}
+
+.icon {
+  float: right;
+  color: #084887;
+  cursor: pointer;
+}
+
+.fa-check {
+  display: none !important;
+}
+
+.suggestionResponse{
+  padding-left: 10px;
+  padding-right: 25px;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#request-counter{
+  color: #787A80;
+  float: right;
+  padding-right: 4px;
+}
